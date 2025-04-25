@@ -1,0 +1,25 @@
+    <div class="row m-0">
+        <div class="col-md-2" *ngFor="let prod of allProducts">
+            <div [routerLink]="prod._id" class="customcard h-100" >
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <img [src]="prod.images[0]" [alt]="prod.title">
+                    </div>
+                    <mat-divider></mat-divider>
+                    <div class="card-foot p-3">
+                        <small>{{prod.category}}</small>
+                        <div class="cardTitle my-2">
+                            <h4 class="picklyText">{{prod.title | length}}</h4>
+                        </div>
+                        <h3>{{prod.total_price}}</h3>
+                    </div>
+                </div>
+                <div class="sidePanel">
+                    <mat-icon>shopping_bag</mat-icon>
+                    <mat-icon>visibility</mat-icon>
+                    <mat-icon>favourite-bordered</mat-icon>
+                </div>
+
+            </div>
+        </div>
+    </div>

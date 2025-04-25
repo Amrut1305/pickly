@@ -1,0 +1,24 @@
+.customcard{
+    cursor: pointer;
+    .card{
+        border: 0px;
+        &:hover{
+            border: 1px solid #7C3AED;
+        }
+    }
+    img{
+        // width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .card-foot{
+        .picklyText{
+            color: #7C3AED;
+        }
+        .cardTitle{
+            height: 50px;
+        }
+    }
+    
+}
+
