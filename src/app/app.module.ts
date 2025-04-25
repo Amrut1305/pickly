@@ -9,6 +9,7 @@ import { ProductsDashboardComponent } from './shared/component/products-dashboar
 import { ProductDetailComponent } from './shared/component/product-detail/product-detail.component';
 import { MaterialModule } from './shared/module/material/material.module';
 import { LengthPipe } from './shared/pipe/length.pipe';
+import { RatingComponent } from './shared/component/product-detail/rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LengthPipe } from './shared/pipe/length.pipe';
     NavbarComponent,
     ProductsDashboardComponent,
     ProductDetailComponent,
-    LengthPipe
+    LengthPipe,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
