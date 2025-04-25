@@ -1,5 +1,7 @@
 .customcard{
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
     .card{
         border: 0px;
         &:hover{
@@ -19,6 +21,25 @@
             height: 50px;
         }
     }
-    
+    .sidePanel{
+        position: absolute;
+        top: 20px;
+        right: -30px;
+        color: #7C3AED;
+        font-size: 25px;
+        transition: all 0.7s ease-in;
+        .icon{
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            margin-bottom: 5px;
+            height: 35px;
+            width: 35px;
+        }
+    }
+    &:hover{
+        .sidePanel{
+            right: 20px;
+        }
+    }
 }
 

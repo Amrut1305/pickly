@@ -6,7 +6,7 @@
                         <img [src]="prod.images[0]" [alt]="prod.title">
                     </div>
                     <mat-divider></mat-divider>
-                    <div class="card-foot p-3">
+                    <div class="card-foot p-3 pb-0">
                         <small>{{prod.category}}</small>
                         <div class="cardTitle my-2">
                             <h4 class="picklyText">{{prod.title | length}}</h4>
@@ -15,11 +15,11 @@
                     </div>
                 </div>
                 <div class="sidePanel">
-                    <mat-icon>shopping_bag</mat-icon>
-                    <mat-icon>visibility</mat-icon>
-                    <mat-icon>favourite-bordered</mat-icon>
+                    <p class="icon d-flex justify-content-center align-items-center"><mat-icon>shopping_bag</mat-icon></p>
+                    <p class="icon d-flex justify-content-center align-items-center"><mat-icon>visibility</mat-icon></p>
+                    <p class="icon d-flex justify-content-center align-items-center"><mat-icon>favorite-bordered</mat-icon></p>
+                    <p class="icon d-flex justify-content-center align-items-center"><mat-icon>shuffle</mat-icon></p>
                 </div>
-
             </div>
         </div>
     </div>
