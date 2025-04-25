@@ -2,10 +2,35 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div routerLink="/products" class="d-flex align-items-center goback">
+            <div routerLink="/products" class="d-flex align-items-center goback my-3">
                 <div class="back d-flex justify-content-center align-items-center mr-2"><mat-icon>arrow_back</mat-icon></div>
                 <span>Go to Back</span>
             </div>
+            <div class="productCard">
+                <div class="card">
+                    <div class="body">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="imgDisplay">
+                                    <img width="400" [src]="selectedImg" [alt]="myProd.title">
+                                </div>
+                                <div class="selectImg d-flex justify-content-center align-items-center">
+                                    <div class="image" *ngFor="let img of myProd.images">
+                                        <img (click)="selectImage(img)" [src]="img" [alt]="myProd.title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <p class="my-2">Category : <strong class="text-primary">{{myProd.category}}</strong></p>
+                                <h3 class="my-2">{{myProd.title}}</h3>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>

@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 })
 export class ProductsService {
   baseUr : string = environment.baseUrl;
-  productsUrl : string = `${this.baseUr}/products`
+  productsUrl : string = `${this.baseUr}/products/filter?category=Mobiles&subcategory=iPhones`
   constructor(
     private _http :HttpClient
   ) { }
@@ -21,4 +21,9 @@ export class ProductsService {
       map((res:Array<Iproduct>)=>res.slice(0,20))
     )
   }
+
+  getproduct(id:string):Observable<Iproduct>{
+    return this._http.get<Iproduct>(`${this.baseUr}/products/${id}`)
+  }
+  
 }
