@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductDetailComponent } from './shared/component/product-detail/product-detail.component';
 import { ProductsDashboardComponent } from './shared/component/products-dashboard/products-dashboard.component';
+import { HomeComponent } from './shared/component/home/home.component';
 
 const routes: Routes = [
   {
     path:'home',
-    component : ProductsDashboardComponent,
+    component : HomeComponent,
   },
   {
     path:'',

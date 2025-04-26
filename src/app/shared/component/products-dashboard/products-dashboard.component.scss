@@ -4,9 +4,6 @@
     overflow: hidden;
     .card{
         border: 0px;
-        &:hover{
-            border: 1px solid #7C3AED;
-        }
     }
     .card-body{
         overflow: hidden;
@@ -17,7 +14,6 @@
             object-fit: cover;
         }
     }
-    
     .card-foot{
         .picklyText{
             color: #7C3AED;
@@ -42,6 +38,7 @@
         }
     }
     &:hover{
+        border: 1px solid #7C3AED;
         .sidePanel{
             right: 20px;
         }

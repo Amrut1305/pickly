@@ -13,6 +13,7 @@ export class ProductDetailComponent implements OnInit {
   pId !: string
   myProd !:Iproduct
   selectedImg !: string
+  selectImgArray !: string[]
   constructor(
     private _routes : ActivatedRoute,
     private _productService : ProductsService
@@ -28,6 +29,7 @@ export class ProductDetailComponent implements OnInit {
     .subscribe(res=>{
       this.myProd=res
       this.selectedImg = this.myProd.images[0]
+      this.selectImgArray = this.myProd.images.slice(0,5)
     })
   }
 

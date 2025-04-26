@@ -15,7 +15,7 @@
                                     <img width="400" [src]="selectedImg" [alt]="myProd.title">
                                 </div>
                                 <div class="selectImg d-flex justify-content-center align-item-center">
-                                    <div class="image" *ngFor="let img of myProd.images">
+                                    <div class="image mr-2" *ngFor="let img of selectImgArray">
                                         <img (click)="selectImage(img)" [src]="img" [alt]="myProd.title">
                                     </div>
                                 </div>
